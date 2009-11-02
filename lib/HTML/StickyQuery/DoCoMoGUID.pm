@@ -2,14 +2,14 @@ package HTML::StickyQuery::DoCoMoGUID;
 
 use strict;
 use warnings;
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 use HTML::StickyQuery;
 
 sub new {
-    my $class = shift;
+    my ($class, %args) = @_;
     bless {
-        sticky => HTML::StickyQuery->new( regexp => qr/./ ),
+        sticky => HTML::StickyQuery->new( regexp => qr/./, %args ),
     }, $class;
 }
 
@@ -165,7 +165,8 @@ sticky method への引数に param => { key => value } を追加すると HTML:
 
 =head1 AUTHOR
 
-Kazuhiro Osawa E<lt>ko@yappo.ne.jpE<gt>
+Kazuhiro Osawa E<lt>ko@yappo.ne.jpE<gt>,
+Hideo Kimura
 
 =head1 SEE ALSO
 
