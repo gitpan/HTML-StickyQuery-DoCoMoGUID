@@ -2,7 +2,7 @@ package HTML::StickyQuery::DoCoMoGUID;
 
 use strict;
 use warnings;
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 use HTML::StickyQuery;
 
@@ -165,7 +165,7 @@ sticky method への引数に param => { key => value } を追加すると HTML:
 
 =head1 AUTHOR
 
-Kazuhiro Osawa E<lt>ko@yappo.ne.jpE<gt>,
+Kazuhiro Osawa E<lt>yappo {at} shibuya [dot] plE<gt>,
 Hideo Kimura
 
 =head1 SEE ALSO
@@ -174,9 +174,8 @@ L<HTML::StickyQuery>, L<http://www.nttdocomo.co.jp/service/imode/make/content/ip
 
 =head1 REPOSITORY
 
-  svn co http://svn.coderepos.org/share/lang/perl/HTML-StickyQuery-DoCoMoGUID/trunk HTML-StickyQuery-DoCoMoGUID
+  git clone git://github.com/yappo/p5-HTML-StickyQuery-DoCoMoGUID.git
 
-HTML::StickyQuery::DoCoMoGUID is Subversion repository is hosted at L<http://coderepos.org/share/>.
 patches and collaborators are welcome.
 
 =head1 LICENSE
